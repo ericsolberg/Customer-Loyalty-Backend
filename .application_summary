@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://gartner-lcap-mq-2024.launchpad.cfapps.eu10.hana.ondemand.com/lcapcustomerloyaltybackend.customerloyaltybackendLaunchpad-1.0.0",
+  "DeployedUTCTime": "2024-06-03T06:57:57.239Z",
+  "ApplicationLogURL": "https://logs.cf.eu10-004.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:customerloyaltybackend-srv)))))"
+}

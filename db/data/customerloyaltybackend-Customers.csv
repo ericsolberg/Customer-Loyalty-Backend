@@ -1,0 +1,11 @@
+ID;name;email;customerNumber;totalPurchaseValue;totalRewardPoints;totalRedeemedRewardPoints
+7d767e82-a6b6-4426-b61a-408f78e04ef0;John Doe;john.doe@gmail.com;1234567;9000;450;450
+9d647d02-8619-45e5-bd68-4f2f5e2181a0;Jane Smith;jane.smith@gmail.com;2345678;8000;400;400
+8379be44-67db-4fb8-b353-1a3b94558534;Robert Johnson;robert.johnson@gmail.com;3456789;7000;350;350
+b6a7da88-57d1-4164-8a6c-c9fb195a1f44;Michael Brown;michael.brown@gmail.com;4567890;6000;300;300
+ceee82e8-dcc8-4fa1-86c0-9a7371dd4639;Linda Davis;linda.davis@gmail.com;5678901;5000;250;250
+47ff3ba8-ab27-4aa3-837c-38da917b67d1;Elizabeth Miller;elizabeth.miller@gmail.com;6789012;4000;200;200
+da1fd59a-9400-4649-82d2-a77726e42015;James Wilson;james.wilson@gmail.com;7890123;3000;150;150
+1531c713-b872-4700-95dd-1a2f221bd9c3;Patricia Anderson;patricia.anderson@gmail.com;8901234;2000;100;100
+d5e4b5bc-b913-49c7-b304-f0252892e1eb;David Thomas;david.thomas@gmail.com;9012345;1000;50;50
+5858da10-0fbd-4865-aa5b-11d07cd5bbd2;Jennifer Jackson;jennifer.jackson@gmail.com;0123456;9000;450;450

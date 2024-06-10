@@ -1,0 +1,1 @@
+using customerloyaltybackendSrv as service from '../../srv/service';

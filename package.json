@@ -1,0 +1,74 @@
+{
+  "name": "customerloyaltybackend",
+  "version": "1.0.0",
+  "description": "Backend for the Velotics D2C customer loyalty program, created with SAP Build Code and SAP Joule generative AI.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^3.15.0",
+    "@sap-cloud-sdk/util": "^3.15.0",
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/low-code-event-handler": "^1.2.4",
+    "@sap/mdk-tools": "^1.3.1",
+    "@sap/xsenv": ">=3.3.2 <3.3.3",
+    "@sap/xssec": "^3.6.1",
+    "express": "^4",
+    "hdb": "^0.19.8",
+    "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/dev-cap-tools": "^1.31.0",
+    "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.108.30",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "start-local": "npm run generate-entry-point && npm run cds-watch",
+    "generate-entry-point": "dev-cap-tools gen-entrypoint",
+    "cds-watch": "cds watch --open",
+    "watch-customerloyaltybackend.ManageCustomers": "cds watch --open customerloyaltybackend.ManageCustomers/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-customerloyaltybackend.ManagePurchases": "cds watch --open customerloyaltybackend.ManagePurchases/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-customerloyaltybackend.ManageRedemptions": "cds watch --open customerloyaltybackend.ManageRedemptions/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "[production]": {
+        "db": "hana",
+        "auth": "xsuaa"
+      },
+      "app-service": {
+        "impl": "@sap/low-code-event-handler"
+      },
+      "auth": {
+        "[development]": {
+          "kind": "dummy"
+        },
+        "[production]": {
+          "kind": "xsuaa"
+        }
+      },
+      "s4_product": {
+        "kind": "odata-v2",
+        "model": "srv/external/s4_product",
+        "[production]": {
+          "credentials": {
+            "destination": "s4-product"
+          }
+        }
+      }
+    },
+    "features": {
+      "fetch_csrf": true
+    }
+  },
+  "lcap": true,
+  "sapux": [
+    "app/customerloyaltybackend.ManageCustomers",
+    "app/customerloyaltybackend.ManagePurchases",
+    "app/customerloyaltybackend.ManageRedemptions"
+  ]
+}
